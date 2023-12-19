@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+    #sb{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        
+    }
+    button{
+        cursor: pointer;
+        font-size: 25px;
+        background-color: #c3611b;
+        border: none;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        width: auto;
+        height: auto;
+        transition: 0.04s ;
+        border-radius: 20px;
+                
+    }
+    button:hover{
+        background-color: red;
+        color: #101469;
+        font-weight: bolder;
+        box-shadow: rgba(250, 8, 8, 0.4) 0px 5px, rgba(202, 11, 11, 0.3) 0px 10px, rgba(157, 10, 10, 0.2) 0px 15px, rgba(122, 4, 4, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    }
+    #search{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+     }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+        padding: 20px;
+        margin: 20px;
+        height: auto;
+        width: auto;
+    }
+    img{
+        height: 600px;
+        width: 600px;
+    }
+</style>
+<body>
+    <h1>OMDB MOVIES DETAILS</h1>
+    <div id="sb">
+            <button id="scrhbt">Back To Home Page</button>
+    </div>
+    <div id="details">
+
+    </div>
+</body>
+<script src="./js_movied.js"></script>
+</html>
